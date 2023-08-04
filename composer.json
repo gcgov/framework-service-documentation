@@ -1,0 +1,14 @@
+{
+	"name": "gcgov/framework-service-documentation",
+	"type": "framework-service",
+	"description": "Plugin that enables a route to generate OpenAPI yaml documentation at the /documentation.yaml route",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"gcgov\\framework\\services\\documentation\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=8.1"
+	}
+}
