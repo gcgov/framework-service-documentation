@@ -17,7 +17,7 @@ class router
 
 
 	public function authentication( \gcgov\framework\models\routeHandler $routeHandler ): bool {
-		return false;
+		return true;
 	}
 
 
