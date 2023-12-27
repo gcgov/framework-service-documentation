@@ -70,7 +70,6 @@ class documentation implements controller {
 			$exclusions[] = config::getRootDir() . '/vendor/gcgov/framework/src/models/authUser.php';
 		}
 
-		error_log(json_encode(array_values($exclusions)));
 		return array_values( $exclusions );
 	}
 
