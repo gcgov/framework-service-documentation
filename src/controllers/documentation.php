@@ -18,8 +18,8 @@ class documentation implements controller {
 	public function yaml(): void {
 		$scanDirectories = $this->getScanDirectories();
 		$excludeFilesDirectories = $this->getExcludeDirectoriesFiles();
-		$files = \OpenApi\Util::finder($scanDirectories, $excludeFilesDirectories, '*.php');
-		$openapi           = \OpenApi\Generator::scan( $files );
+		$finder = new \OpenApi\SourceFinder( $scanDirectories, $excludeFilesDirectories, '*.php' );
+		$openapi = ( new \OpenApi\Generator() )->generate( $finder );
 		header( 'Content-Type: text/x-yaml' );
 		echo $openapi->toYaml();
 		die();
