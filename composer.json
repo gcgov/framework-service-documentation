@@ -16,7 +16,7 @@
 	"require-dev": {
 		"phpstan/phpstan": "^2.1",
 		"phpunit/phpunit": "^10.5",
-		"gcgov/framework": "dev-feat-qualitytools",
+		"gcgov/framework": "dev-main",
 		"jetbrains/phpstorm-attributes": "^1.0"
 	},
 	"repositories": [
