@@ -20,7 +20,7 @@
 		"jetbrains/phpstorm-attributes": "^1.0"
 	},
 	"repositories": [
-		{ "type": "path", "url": "C:/inetpub/www/packages/framework", "options": { "symlink": false } }
+		{ "type": "path", "url": "../framework*", "options": { "symlink": true } }
 	],
 	"scripts": {
 		"phpstan": "phpstan analyse --memory-limit=512M",
